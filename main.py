@@ -76,7 +76,7 @@ def main():
 
         # 2) Map hand position & gestures to effects  (YOUR UPDATED LOGIC)
         if tx is not None:
-            warp.strength = 0.20 + 0.60 * tx        # left→soft, right→strong
+            warp.strength = 0.05 + 0.60 * tx        # left→soft, right→strong
         if ty is not None:
             glasses.spacing = max(0.6, min(1.6, 1.6 - ty))  # up→wider, down→narrower
 
